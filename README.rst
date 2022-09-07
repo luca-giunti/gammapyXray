@@ -4,31 +4,32 @@ GammapyXray
 =======
 A Python tool for the analysis of Gamma-ray and X-ray data in a unified framework, using physically-motivated spectral models.
 
-A software description is provided in the following publication: TBD
-
-Dependencies
-+++++++++++++++++++++++++++++++++++++++++++++
-The scripts provided in this folder are built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. 
+The scripts provided in this folder are built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A software description is provided in the following publication: TBD
 
 Installation and Set-up
 +++++++++++++++++++++++++++++++++++++++++++++
 These instructions assume that you have previously installed a version of `Anaconda <https://www.anaconda.com/products/distribution>`_ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ on your machine.
 
-Download the zip / clone the repo: TBD
+Set-up the work environment with conda::
 
-To set-up the work environment with conda::
-
-  conda create -n gammapyXray-0.1
-  conda activate gammapyXray-0.1
+  conda create -n gammapyXray
+  conda activate gammapyXray
   conda install -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-forge ciao sherpa
   conda install -c conda-forge gammapy
 
-Additionally, if you wish to combine the absorption models provided in Sherpa with the physical models provided by Naima, you have to `install Naima <https://naima.readthedocs.io/en/latest/installation.html>`_. TBD: show how this is done!
+`Install JupyterLab or Jupyter Notebook <https://jupyter.org/install>`_ (recommended). 
 
-Optionally, to work in a `Jupyter Lab <https://jupyterlab.readthedocs.io/en/stable/>`_ notebook::
+If you need to use the physical models provided by `Naima <https://naima.readthedocs.io/en/latest/>`_, follow `these instructions <https://naima.readthedocs.io/en/latest/installation.html>`_ (optional).
+
+Download the ZIPped contents of this folder directly from the main GitHub `page <https://github.com/luca-giunti/gammapyXray>`_, or equivalently from the `Zenodo <TBD>`_ or `Software Heritage <TBD>`_ archives. Extract under your home directory::
+
+  cd
+  unzip ~/Downloads/gammapyXray-main.zip
   
-  conda install -c conda-forge jupyterlab
+To check that the installation has succeeded and start using the package, navigate to the ``gammapyXray-main`` folder and try to execute the example notebook::
 
+  cd gammapyXray-main
+  jupyter notebook example_nb.ipynb 
 
 Citing
 +++++++++++++++++++++++++++++++++++++++++++++
