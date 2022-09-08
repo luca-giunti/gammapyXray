@@ -15,8 +15,8 @@ Set-up the work environment with conda::
   conda create -n gammapyXray
   conda activate gammapyXray
   conda install -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-forge ciao sherpa
-  conda install -c conda-forge gammapy
-
+  conda install -c conda-forge gammapy=0.20.1
+  
 `Install JupyterLab or Jupyter Notebook <https://jupyter.org/install>`_ (recommended). 
 
 If you need to use the physical models provided by `Naima <https://naima.readthedocs.io/en/latest/>`_, follow `these instructions <https://naima.readthedocs.io/en/latest/installation.html>`_ (optional).
