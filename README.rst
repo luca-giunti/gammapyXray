@@ -1,5 +1,3 @@
-Caveat: this is a work in progress. More details and examples will be added here
-
 GammapyXray 
 =======
 A Python tool for the analysis of Gamma-ray and X-ray data in a unified framework, using physically-motivated spectral models.
@@ -26,14 +24,11 @@ Download the ZIPped contents of this folder directly from the main GitHub `page 
   cd
   unzip ~/Downloads/gammapyXray-main.zip
   
-To check that the installation has succeeded and start using the package, navigate to the ``gammapyXray-main`` folder and try to execute the example notebook::
+To check that the installation has succeeded and start using the package, navigate to the ``gammapyXray-main`` folder and try to execute the tutorial notebook::
 
   cd gammapyXray-main
-  jupyter notebook example_nb.ipynb 
+  jupyter notebook tutorial.ipynb 
 
-Code description
-+++++++++++++++++++++++++++++++++++++++++++++
-TBD
 
 Citing
 +++++++++++++++++++++++++++++++++++++++++++++
@@ -49,20 +44,7 @@ If you use gammapyXray for work/research presented in a publication (whether dir
 We encourage you to also include citations to the paper in the main text
 wherever appropriate, using the recommended BibTeX entry:
 
-Bibtex
-
-Contributing Code and Feedback
-+++++++++++++++++++++++++++++++++++++++++++++
-.. image:: https://img.shields.io/github/issues-pr/registerrier/gammapy-ogip-spectra
-    :target: https://github.com/registerrier/gammapy-ogip-spectra/pulls
-.. image:: https://img.shields.io/github/issues-pr-closed/registerrier/gammapy-ogip-spectra    
-    :target: https://github.com/registerrier/gammapy-ogip-spectra/pulls
-
-
-.. image:: https://img.shields.io/github/issues/registerrier/gammapy-ogip-spectra
-    :target: https://github.com/registerrier/gammapy-ogip-spectra/issues
-.. image:: https://img.shields.io/github/issues-closed/registerrier/gammapy-ogip-spectra?color=yellow    
-    :target: https://github.com/registerrier/gammapy-ogip-spectra/issues
+TBD
 
 Licence
 +++++++
