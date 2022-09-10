@@ -49,10 +49,17 @@ class SherpaSpectralModel(SpectralModel):
 
         # Trickeries due to the sherpa model evaluation scheme
         # (https://sherpa.readthedocs.io/en/4.14.1/evaluation/index.html)
-        energy = np.array(energy)
+        energy = np.array(energy, dtype=float)
         shape = energy.shape
         energy = energy.flatten()
         energy = np.append(energy, energy[-1] * 2)
+
+        # Remove duplicate energies by adding a negligible value
+        # (otherwise there are problems with some models, e.g. wabs)
+        for idx in range(len(energy) - 1):
+            if energy[idx] == energy[idx + 1]:
+                delta = (energy[idx + 2] - energy[idx + 1]) / 100
+                energy[idx + 1] += delta
 
         self._update_sherpa_parameters(**kwargs)
 
