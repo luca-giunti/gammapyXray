@@ -1,6 +1,7 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 import numpy as np
 from gammapy.datasets import SpectrumDatasetOnOff
+from gammapy.maps import MapAxis
 
 __all__ = ["StandardOGIPDataset"]
 
@@ -74,6 +75,30 @@ class StandardOGIPDataset(SpectrumDatasetOnOff):
             self._grouped = dataset.resample_energy_axis(
                 axis, name=f"group_{self.name}"
             )
+
+    def set_min_true_energy(self, energy):
+        """Resamples the true energy axis of the grouped dataset, by eliminating all bins below a given energy.
+        Parameters
+        -------------
+        energy: `~astropy.units.Quantity`
+            Minimum energy (exclusive) for the resampled true energy axis
+        """
+        edges = self.grouped.geoms["geom_exposure"].axes["energy_true"].edges
+        mask = np.where(edges > energy)
+        edges_resampled = edges[mask]
+
+        resampled_true_energy_axis = MapAxis.from_edges(
+            edges_resampled, name="energy_true"
+        )
+        self.grouped.exposure = self.grouped.exposure.resample_axis(
+            resampled_true_energy_axis
+        )
+        self.grouped.edisp.edisp_map = self.grouped.edisp.edisp_map.resample_axis(
+            resampled_true_energy_axis
+        )
+        self.grouped.edisp.exposure_map = self.grouped.edisp.exposure_map.resample_axis(
+            resampled_true_energy_axis
+        )
 
     @property
     def models(self):
