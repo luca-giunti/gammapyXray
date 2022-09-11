@@ -1,48 +1,52 @@
 GammapyXray 
 =======
-A Python tool for the analysis of Gamma-ray and X-ray data in a unified framework, using physically-motivated spectral models.
+A Python code for the spectral analysis of Gamma-ray and X-ray data in a unified framework, using physically-motivated spectral models. The data handling and fitting relies on the Gammapy architecture, while the multi-wavelength spectral modeling can be performed using an arbitrary combination of the functions included in the Gammapy, Xspec and Naima libraries.
 
-The scripts provided in this folder are built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A software description is provided in the following publication: TBD
+This code is built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A working example is provided in the ``tutorial.ipynb`` notebook, while a software description can be found in the following publication: TBD
+
+.. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
+    :target: http://www.astropy.org/
+
+.. image:: https://anaconda.org/conda-forge/gammapy/badges/installer/conda.svg
 
 Installation and Set-up
 +++++++++++++++++++++++++++++++++++++++++++++
 These instructions assume that you have previously installed a version of `Anaconda <https://www.anaconda.com/products/distribution>`_ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ on your machine.
 
-Set-up the work environment with conda::
+- Set-up the work environment with conda::
 
-  conda create -n gammapyXray
-  conda activate gammapyXray
-  conda install -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-forge ciao sherpa
-  conda install -c conda-forge gammapy=0.20.1
+    conda create -n gammapyXray
+    conda activate gammapyXray
+    conda install -c https://cxc.cfa.harvard.edu/conda/ciao -c conda-forge ciao sherpa
+    conda install -c conda-forge gammapy=0.20.1
   
-`Install JupyterLab or Jupyter Notebook <https://jupyter.org/install>`_ (recommended). 
+- `Install JupyterLab or Jupyter Notebook <https://jupyter.org/install>`_ (recommended). 
 
-If you need to use the physical models provided by `Naima <https://naima.readthedocs.io/en/latest/>`_, follow `these instructions <https://naima.readthedocs.io/en/latest/installation.html>`_ (optional).
+- If you need to use physically-motivated radiative models, install `Naima <https://naima.readthedocs.io/en/latest/>`_ following `these instructions <https://naima.readthedocs.io/en/latest/installation.html>`_ (optional).
 
-Download the ZIPped contents of this folder directly from the main GitHub `page <https://github.com/luca-giunti/gammapyXray>`_, or equivalently from the `Zenodo <TBD>`_ or `Software Heritage <TBD>`_ archives. Extract under your home directory::
+- Download the ZIPped contents of this folder directly from the main GitHub `page <https://github.com/luca-giunti/gammapyXray>`_, or equivalently from the `Zenodo <TBD>`_ or `Software Heritage <TBD>`_ archives. Then extract under your home directory::
 
-  cd
-  unzip ~/Downloads/gammapyXray-main.zip
+    cd
+    unzip ~/Downloads/gammapyXray-main.zip
   
-To check that the installation has succeeded and start using the package, navigate to the ``gammapyXray-main`` folder and try to execute the tutorial notebook::
+- To check that the installation has succeeded and start using the package, navigate to the ``gammapyXray-main`` folder and execute the tutorial notebook::
 
-  cd gammapyXray-main
-  jupyter notebook tutorial.ipynb 
+    cd gammapyXray-main
+    jupyter notebook tutorial.ipynb 
 
 
 Citing
 +++++++++++++++++++++++++++++++++++++++++++++
 
 
-If you use gammapyXray for work/research presented in a publication (whether directly, or as a dependency to another package), we ask that you please cite it using the following links
+If you use the GammapyXray code for work/research presented in a publication (whether directly, or as a dependency to another package), we ask that you please cite it using the following links
 
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4701488.svg?style=flat
     :target: TBD
 .. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
     :target: TBD
 
-We encourage you to also include citations to the paper in the main text
-wherever appropriate, using the recommended BibTeX entry:
+We encourage you to also include citations to the related paper in the main text of your article wherever appropriate, using the recommended BibTeX entry:
 
 TBD
 
