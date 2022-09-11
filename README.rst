@@ -1,30 +1,38 @@
 GammapyXray 
-=======
+==========
+
 A Python code for the spectral analysis of Gamma-ray and X-ray data in a unified framework, using physically-motivated spectral models. The data handling and fitting relies on the Gammapy architecture, while the multi-wavelength spectral modeling can be performed using an arbitrary combination of the functions included in the Gammapy, Xspec and Naima libraries.
 
+.. raw:: html
+
+   <img src="cover_image.png" align="right" width="210px">
+   
 This code is built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A working example is provided in the ``tutorial.ipynb`` notebook, while a software description can be found in the following publication: TBD
 
 If you wish to give us your feedback, report bugs or ask for help please open an issue or send us an email.
 
 .. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
     :target: http://www.astropy.org/
-
 .. image:: https://anaconda.org/conda-forge/gammapy/badges/installer/conda.svg
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4701488.svg?style=flat
+    :target: TBD
+.. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
+    :target: TBD
+.. image:: https://anaconda.org/conda-forge/gammapy/badges/license.svg
+    :target: TBD
+
+
 
 Citing
 +++++++++++++++++++++++++++++++++++++++++++++
 
 
-If you use the GammapyXray code for work/research presented in a publication (whether directly, or as a dependency to another package), we ask that you please cite it using the following links
+If you use GammapyXray for work/research presented in a publication (whether directly, or as a dependency to another package), we ask that you please cite:
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4701488.svg?style=flat
-    :target: TBD
-.. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
-    :target: TBD
+- the code itself using the `Zenodo <TBD>`_ and/or `Software Heritage <TBD>`_ DOIs
+- the related paper using the recommended BibTeX entry::
 
-We encourage you to also include citations to the related paper in the main text of your article wherever appropriate, using the recommended BibTeX entry:
-
-TBD
+    TBD
 
 Installation and Set-up
 +++++++++++++++++++++++++++++++++++++++++++++
@@ -64,8 +72,4 @@ If you wish to execute the tests associated to this code (using `pytest <https:/
 Licence
 +++++++
 This folder is licensed under a 3-clause BSD style license - see the
-`LICENSE.rst <https://github.com/gammapy/gammapy/blob/master/LICENSE.rst>`_ file.
-
-.. image:: https://anaconda.org/conda-forge/gammapy/badges/license.svg
-    :target: TBD
-    :alt: Licence
+`LICENSE.rst <https://github.com/luca-giunti/gammapyXray/blob/main/LICENSE.rst>`_ file.
