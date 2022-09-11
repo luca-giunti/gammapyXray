@@ -5,7 +5,7 @@ A Python code for the spectral analysis of Gamma-ray and X-ray data in a unified
 
 .. raw:: html
 
-   <img src="cover_image.png" align="right" width="180px">
+   <img src="logo.png" align="right" width="180px">
    
 This code is built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A working example is provided in the ``tutorial.ipynb`` notebook, while a software description can be found in the following publication: TBD
 
