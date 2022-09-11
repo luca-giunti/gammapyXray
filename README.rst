@@ -45,7 +45,6 @@ These instructions assume that you have previously installed a version of `Anaco
 
 - Check that the installation has succeeded and start using the package, executing the tutorial notebook::
 
-    cd gammapyXray-main
     jupyter notebook tutorial.ipynb 
 
 
