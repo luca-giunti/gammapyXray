@@ -1,4 +1,4 @@
-Copyright (c) 2022, Régis Terrier
+Copyright (c) 2022, Luca Giunti
 
 All rights reserved.
 
