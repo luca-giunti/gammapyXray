@@ -4,10 +4,27 @@ A Python code for the spectral analysis of Gamma-ray and X-ray data in a unified
 
 This code is built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A working example is provided in the ``tutorial.ipynb`` notebook, while a software description can be found in the following publication: TBD
 
+If you wish to give us your feedback, report bugs or ask for help please open an issue or send us an email.
+
 .. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
     :target: http://www.astropy.org/
 
 .. image:: https://anaconda.org/conda-forge/gammapy/badges/installer/conda.svg
+
+Citing
++++++++++++++++++++++++++++++++++++++++++++++
+
+
+If you use the GammapyXray code for work/research presented in a publication (whether directly, or as a dependency to another package), we ask that you please cite it using the following links
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4701488.svg?style=flat
+    :target: TBD
+.. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
+    :target: TBD
+
+We encourage you to also include citations to the related paper in the main text of your article wherever appropriate, using the recommended BibTeX entry:
+
+TBD
 
 Installation and Set-up
 +++++++++++++++++++++++++++++++++++++++++++++
@@ -35,20 +52,18 @@ These instructions assume that you have previously installed a version of `Anaco
     jupyter notebook tutorial.ipynb 
 
 
-Citing
-+++++++++++++++++++++++++++++++++++++++++++++
+Testing
++++++++++++++++++++++++++
 
+If you wish to execute the tests associated to this code (using `pytest <https://docs.pytest.org/en/7.1.x/getting-started.html#install-pytest>`_) you need to:
 
-If you use the GammapyXray code for work/research presented in a publication (whether directly, or as a dependency to another package), we ask that you please cite it using the following links
+- set up the ``XMM_DATA`` environment variable::
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4701488.svg?style=flat
-    :target: TBD
-.. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
-    :target: TBD
+    export XMM_DATA=<absolute path>/gammapyXray/XMM_test_files/
+- run pytest from the ``gammapyXray`` folder::
 
-We encourage you to also include citations to the related paper in the main text of your article wherever appropriate, using the recommended BibTeX entry:
-
-TBD
+    pytest gammapyXray/tests/test_models.py
+    pytest gammapyXray/tests/test_ogip_spectrum_dataset.py 
 
 Licence
 +++++++
