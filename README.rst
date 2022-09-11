@@ -39,7 +39,7 @@ These instructions assume that you have previously installed a version of `Anaco
   
 - `Install JupyterLab or Jupyter Notebook <https://jupyter.org/install>`_ (recommended). 
 
-- If you need to use physically-motivated radiative models, install `Naima <https://naima.readthedocs.io/en/latest/>`_ following `these instructions <https://naima.readthedocs.io/en/latest/installation.html>`_ (optional).
+- If you need to use physically-motivated radiative models, install `Naima <https://naima.readthedocs.io/en/latest/>`_ following `these instructions <https://naima.readthedocs.io/en/latest/installation.html>`_ (optional, but needed to run the ``tutorial.ipynb``).
 
 - Download the ZIPped contents of this folder directly from the main GitHub `page <https://github.com/luca-giunti/gammapyXray>`_, or equivalently from the `Zenodo <TBD>`_ or `Software Heritage <TBD>`_ archives. Then extract under your home directory::
 
