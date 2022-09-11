@@ -21,9 +21,11 @@ def simple_geom():
 
 @pytest.fixture()
 def ogip_dataset():
-    return StandardOGIPDataset.read(
-        filename="/home/lucagiunti/gammapy-ogip-spectra/XMM_test_files/PN_PWN.grp"
+    dataset = StandardOGIPDataset.read(
+        filename="$XMM_DATA"
     )
+    dataset.set_min_true_energy(0 * u.keV)
+    return dataset
 
 
 def test_create(simple_geom):
@@ -76,8 +78,8 @@ def test_fit(ogip_dataset):
     assert fit_result.success is True
     assert_allclose(fit_result.total_stat, 10.351819391138392)
     parameters = fit_result.parameters
-    assert_allclose(parameters["amplitude"].value, 0.008154761422515165)
-    assert_allclose(parameters["index"].error, 1.1534332142030461)
+    assert_allclose(parameters["amplitude"].value, 0.008154642660115475)
+    assert_allclose(parameters["index"].error, 1.1533268536156551)
 
 
 def test_to_spectrum_dataset_onoff(ogip_dataset):
