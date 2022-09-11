@@ -1,3 +1,4 @@
+# Licensed under a 3-clause BSD style license - see LICENSE.rst
 import astropy.units as u
 import numpy as np
 from gammapy.modeling.models import SpectralModel
