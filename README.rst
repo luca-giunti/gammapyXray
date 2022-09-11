@@ -2,10 +2,6 @@ GammapyXray
 ==========
 
 A Python code for the spectral analysis of Gamma-ray and X-ray data in a unified framework, using physically-motivated spectral models. The data handling and fitting relies on the Gammapy architecture, while the multi-wavelength spectral modeling can be performed using an arbitrary combination of the functions included in the Gammapy, Xspec and Naima libraries.
-
-.. raw:: html
-
-   <img src="cover.png" align="right" width="180px">
    
 This code is built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A working example is provided in the ``tutorial.ipynb`` notebook, while a software description can be found in the following publication: TBD
 
@@ -17,8 +13,6 @@ If you wish to give us your feedback, report bugs or ask for help please open an
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4701488.svg?style=flat
     :target: TBD
 .. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
-    :target: TBD
-.. image:: https://anaconda.org/conda-forge/gammapy/badges/license.svg
     :target: TBD
 
 
@@ -73,3 +67,6 @@ Licence
 +++++++
 This folder is licensed under a 3-clause BSD style license - see the
 `LICENSE.rst <https://github.com/luca-giunti/gammapyXray/blob/main/LICENSE.rst>`_ file.
+
+.. image:: https://anaconda.org/conda-forge/gammapy/badges/license.svg
+    :target: TBD
