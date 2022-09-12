@@ -30,9 +30,13 @@ If you use GammapyXray for work/research presented in a publication (whether dir
 
 Installation and Set-up
 +++++++++++++++++++++++++++++++++++++++++++++
-These instructions assume that you have previously installed a version of `Anaconda <https://www.anaconda.com/products/distribution>`_ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ on your machine.
+These instructions assume that you have previously installed a version of `Anaconda <https://www.anaconda.com/products/distribution>`_ or `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ on your machine. Optionally, if you want to speed up the installation, you can also use `Mamba <https://mamba.readthedocs.io/>`_. In that case, simply install it using::
 
-- Set-up the work environment with conda::
+  conda install mamba -n base -c conda-forge 
+  
+and substitute all the occurrences of the ``conda`` command with ``mamba`` in the following steps. 
+
+- Set-up the work environment::
 
     conda create -n gammapyXray
     conda activate gammapyXray
