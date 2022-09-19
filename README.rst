@@ -10,8 +10,8 @@ If you wish to give us your feedback, report bugs or ask for help please open an
 .. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
     :target: http://www.astropy.org/
 .. image:: https://anaconda.org/conda-forge/gammapy/badges/installer/conda.svg
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4701488.svg?style=flat
-    :target: TBD
+.. image:: https://zenodo.org/badge/533655451.svg
+   :target: https://zenodo.org/badge/latestdoi/533655451
 .. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
     :target: TBD
 
