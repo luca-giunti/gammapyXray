@@ -20,15 +20,7 @@ authors:
     orcid: 'https://orcid.org/0000-0002-8219-4667'
 identifiers:
   - type: doi
-    value: TBD
+    value: https://doi.org/10.5281/zenodo.7092736
     description: Zenodo
-  - type: swh
-    value: TBD
-    description: Software Heritage
-  - type: doi
-    value: TBD
-    description: Related paper
-abstract: TBD
-keywords:
-  - ''
 license: BSD-3-Clause
+url: https://doi.org/10.5281/zenodo.7092736
