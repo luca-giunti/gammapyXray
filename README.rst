@@ -3,7 +3,7 @@ GammapyXray
 
 A Python code for the spectral analysis of Gamma-ray and X-ray data in a unified framework, using physically-motivated spectral models. The data handling and fitting relies on the Gammapy architecture, while the multi-wavelength spectral modeling can be performed using an arbitrary combination of the functions included in the Gammapy, Xspec and Naima libraries.
    
-This code is built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A working example is provided in the ``tutorial.ipynb`` notebook, while a software description can be found in the following publication: TBD
+This code is built on Numpy, Scipy, Astropy, Gammapy, Naima, Sherpa and Xspec. A working example is provided in the ``tutorial.ipynb`` notebook.
 
 If you wish to give us your feedback, report bugs or ask for help please open an issue or send us an email.
 
@@ -12,10 +12,6 @@ If you wish to give us your feedback, report bugs or ask for help please open an
 .. image:: https://anaconda.org/conda-forge/gammapy/badges/installer/conda.svg
 .. image:: https://zenodo.org/badge/533655451.svg
    :target: https://zenodo.org/badge/latestdoi/533655451
-.. image:: https://archive.softwareheritage.org/badge/swh:1:dir:02e8a702ef6c9558a9f96d99bf6b9f41b5edcd34/
-    :target: TBD
-
-
 
 Citing
 +++++++++++++++++++++++++++++++++++++++++++++
@@ -23,10 +19,9 @@ Citing
 
 If you use GammapyXray for work/research presented in a publication (whether directly, or as a dependency to another package), we ask that you please cite:
 
-- the code itself using the `Zenodo <TBD>`_ and/or `Software Heritage <TBD>`_ DOIs
-- the related paper using the recommended BibTeX entry::
+.. image:: https://zenodo.org/badge/533655451.svg
+   :target: https://zenodo.org/badge/latestdoi/533655451
 
-    TBD
 
 Installation and Set-up
 +++++++++++++++++++++++++++++++++++++++++++++
@@ -47,7 +42,7 @@ and substitute all the occurrences of the ``conda`` command with ``mamba`` in th
 
 - If you need to use physically-motivated radiative models, install `Naima <https://naima.readthedocs.io/en/latest/>`_ following `these instructions <https://naima.readthedocs.io/en/latest/installation.html>`_ (optional, but needed to run the ``tutorial.ipynb``).
 
-- Download the ZIPped contents of this folder directly from the main GitHub `page <https://github.com/luca-giunti/gammapyXray>`_, or equivalently from the `Zenodo <TBD>`_ or `Software Heritage <TBD>`_ archives. Then extract under your home or work directory and navigate to the ``gammapyXray-main`` folder
+- Download the ZIPped contents of this folder directly from the main GitHub `page <https://github.com/luca-giunti/gammapyXray>`_, or equivalently from the `Zenodo <https://zenodo.org/badge/latestdoi/533655451>`_ archive. Then extract under your home or work directory and navigate to the ``gammapyXray-0.1`` folder
 
 - Check that the installation has succeeded and start using the package, executing the tutorial notebook::
 
@@ -71,6 +66,3 @@ Licence
 +++++++
 This folder is licensed under a 3-clause BSD style license - see the
 `LICENSE.rst <https://github.com/luca-giunti/gammapyXray/blob/main/LICENSE.rst>`_ file.
-
-.. image:: https://anaconda.org/conda-forge/gammapy/badges/license.svg
-    :target: TBD
