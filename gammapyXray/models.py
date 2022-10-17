@@ -19,11 +19,12 @@ class SherpaSpectralModel(SpectralModel):
     tag = ["SherpaSpectralModel", "sherpa", "xspec"]
 
     def __init__(
-        self, sherpa_model, default_units=(u.keV, 1 / (u.keV * u.cm ** 2 * u.s))
+        self, sherpa_model, integrated=True, default_units=(u.keV, 1 / (u.keV * u.cm ** 2 * u.s))
     ):
         self.sherpa_model = sherpa_model
         self.default_units = default_units
         self.default_parameters = self._wrap_parameters()
+        self.integrated = integrated
         super().__init__()
 
     def _wrap_parameters(self):
@@ -31,7 +32,7 @@ class SherpaSpectralModel(SpectralModel):
         for par in self.sherpa_model.pars:
             is_norm = par.name in ["ampl", "norm", "K"]
             parameter = Parameter(
-                name=par.name, value=par.val, frozen=par.frozen, is_norm=is_norm
+                name=par.name, value=par.val, frozen=par.frozen, min=par.min, max=par.max, is_norm=is_norm
             )
             # TODO: set unit?
             parameters.append(parameter)
@@ -65,6 +66,8 @@ class SherpaSpectralModel(SpectralModel):
         self._update_sherpa_parameters(**kwargs)
 
         y_ = self.sherpa_model(energy)[:-1]
+        if self.integrated:
+            y_ /= energy[1:] - energy[:-1]
         y_ = y_ * self.default_units[1]
 
         return y_.reshape(shape)
